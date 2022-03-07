@@ -30,5 +30,4 @@ name = entry.get()
 
 label.pack()
 entry.pack()
-
 window.mainloop()
