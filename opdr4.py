@@ -4,16 +4,6 @@ import tkinter as tk
 from unicodedata import name
 window = tk.Tk()
 
-
-ascii = figlet_format("Max", font="standard")
-
-greeting = tk.Label(
-    text=ascii,
-    width=30,
-    height=10
-    )
-greeting.pack()
-
 label = tk.Label(
     text="Vul hier je naam in:",
     bg="#DCDCDC",
@@ -25,9 +15,29 @@ entry = tk.Entry(
     bg="#D3D3D3",
     
     )
+
+button = tk.Button(text="Submit")
+
 name = entry.get()
+ascii = figlet_format(text=name, font="doh")
+
+
+
+greeting = tk.Label(
+    text=ascii,
+    width=100,
+    height=30,
+    font='Courier'
+    )
+
+
+
+
 
 
 label.pack()
 entry.pack()
+button.pack()
+greeting.pack()
 window.mainloop()
+print(ascii)
