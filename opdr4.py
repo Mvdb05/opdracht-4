@@ -21,19 +21,12 @@ button = tk.Button(text="Submit")
 name = entry.get()
 ascii = figlet_format(text=name, font="doh")
 
-
-
 greeting = tk.Label(
     text=ascii,
     width=100,
     height=30,
     font='Courier'
     )
-
-
-
-
-
 
 label.pack()
 entry.pack()
